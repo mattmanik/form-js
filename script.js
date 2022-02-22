@@ -49,7 +49,7 @@ submitBtn.addEventListener("click", function(){
 
 prevBtnSec.addEventListener("click", function(event){
   event.preventDefault();
-  slidePage.style.marginLeft = "0%";
+  slidePage.style.marginLeft = "-25%";
   bullet[current - 2].classList.remove("active");
   progressCheck[current - 2].classList.remove("active");
   progressText[current - 2].classList.remove("active");
@@ -57,7 +57,7 @@ prevBtnSec.addEventListener("click", function(event){
 });
 prevBtnThird.addEventListener("click", function(event){
   event.preventDefault();
-  slidePage.style.marginLeft = "-25%";
+  slidePage.style.marginLeft = "-50%";
   bullet[current - 2].classList.remove("active");
   progressCheck[current - 2].classList.remove("active");
   progressText[current - 2].classList.remove("active");
@@ -65,7 +65,7 @@ prevBtnThird.addEventListener("click", function(event){
 });
 prevBtnFourth.addEventListener("click", function(event){
   event.preventDefault();
-  slidePage.style.marginLeft = "-50%";
+  slidePage.style.marginLeft = "-75%";
   bullet[current - 2].classList.remove("active");
   progressCheck[current - 2].classList.remove("active");
   progressText[current - 2].classList.remove("active");

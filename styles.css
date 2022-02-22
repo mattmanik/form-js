@@ -5,6 +5,7 @@
   font-family: "Lato", sans-serif;
 }
 
+
 :root {
   --primary: #f7834e;
   --greyf: #0000005c;
@@ -92,6 +93,8 @@ body {
   position: relative;
 }
 form .page .field .label {
+  text-align: left;
+  font-size: 18px;
   position: absolute;
   top: -30px;
   font-weight: 500;
@@ -104,6 +107,14 @@ form .page .field input {
   padding-left: 15px;
   font-size: 18px;
 }
+
+select {
+  
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+
 form .page .field select {
   width: 100%;
   padding-left: 10px;
@@ -183,10 +194,10 @@ form .page .btns button.next {
   position: absolute;
   content: "";
   bottom: 11px;
-  right: -51px;
-  height: 3px;
-  width: 44px;
-  background: #263e56;
+  right: -72px;
+  height: 2px;
+  width: 60px;
+  background: #263e565c;
 }
 .progress-bar .step .bullet.active:after {
   background: var(--greyf);
