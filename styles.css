@@ -6,9 +6,39 @@
 }
 
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
 :root {
   --primary: #f7834e;
   --greyf: #0000005c;
+}
+
+.toptext {
+    position: relative;
+    margin-bottom: -15px;
+}
+
+.textareas {
+  padding:10px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  width: 305px;
+  height: 53px;
+}
+
+.validtext {
+  right: -6px;
+  position: relative;
+  color: red;
+  font-size: 15px;
+  font-weight: 700;
+  visibility: visible;
+  text-align: right;
 }
 
 form .page .field input:focus {
@@ -42,6 +72,7 @@ select {
 
 .footerr {
   margin: 10px 0px;
+  font-size: 18px;
 }
 
 body {
@@ -66,7 +97,7 @@ body {
 .container header {
   font-size: 25px;
   font-weight: 600;
-  margin: 0 0 30px 0;
+  margin: 0 0 0px 0;
 }
 .container .form-outer {
   width: 100%;
@@ -149,9 +180,25 @@ form .page .btns button.prev {
 form .page .btns button.next {
   margin-left: 3px;
 }
+
+.formhead {
+  width: 100%;
+  overflow: hidden;
+}
+
+.heads{
+  display: flex;
+  width: 400%;
+}
+
+.head {
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+
 .container .progress-bar {
   display: flex;
-  margin: 40px 0;
+  margin: 15px 0px 45px;
   user-select: none;
 }
 .container .progress-bar .step {
@@ -221,7 +268,7 @@ form .page .btns button.next {
 .progress-bar .step .check {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 55%;
   font-size: 15px;
   transform: translate(-50%, -50%);
   display: none;

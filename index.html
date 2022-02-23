@@ -17,8 +17,15 @@
     />
   </head>
   <body>
-    <div class="container">
-      <header>Interested? Get started then!</header>
+    <div class="container" id="containerr">
+      <div class="formhead">
+        <div class="heads">
+          <header class="head bigtitle">Interested? Get started then!</header>
+          <header class="head">Let’s find the best batch for you.</header>
+          <header class="head">Tell us what you’re expecting</header>
+
+        </div>
+      </div>
       <div class="progress-bar">
         <div class="step">
             <p>
@@ -49,22 +56,24 @@
         </div>
       </div>
       <div class="form-outer">
-        <form action="#">
+        <form action="#" name="myform">
           <div class="page slide-page">
             <div class="field">
-              <div class="label">Name</div>
-              <input type="text" />
+              <div class="label">Name <span id="nameText" class="validtext">*Enter your name</span> </div>
+              <input class="nameF" type="text" id="names" name="name"/>
             </div>
             <div class="field">
-              <div class="label">Email-ID</div>
-              <input type="text" />
+              <div class="label">Email-ID <span id="mailText" class="validtext">*Enter a valid email address</span></div> 
+              <input type="email" id="mail" pattern=".+@globex\.com" size="30" required/>
             </div>
             <div class="field">
-              <div class="label">Phone Number</div>
-              <input type="text" />
+              <div class="label">Phone Number <span id="cellText" class="validtext">*Enter your name</span> </div>
+              <input  id="cell"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type = "number"
+              maxlength = "10"/>
             </div>
             <div class="field">
-              <button class="firstNext next">Next</button>
+              <button  class="firstNext next">Next</button>
             </div>
           </div>
           <div class="page">
@@ -112,6 +121,10 @@
             </div>
           </div>
           <div class="page">
+            <div class="field" style="margin-bottom: -25px;">
+              <div class="label">What’s your expectation out of this Digital Marketing Program? </div>
+            </div>
+            <textarea class="textareas"></textarea>
             <div class="field">
               <div class="label">What do you want out of this program?</div>
               <select>
@@ -121,7 +134,7 @@
               </select>
             </div>
             <div class="field">
-              <div class="label" style="font-size: 17px; width: 300px;">
+              <div class="label" style="font-size: 15px; width: 400px;">
                 Have you taken any course in Digital Marketing?
               </div>
               <select>
@@ -139,7 +152,7 @@
                 <option>5</option>
               </select>
             </div>
-            <div class="field btns">
+            <div class="field btns" style="margin:10px 0px">
               <!-- <button class="prev-2 prev">Previous</button> -->
               <button class="next-2 next">Submit</button>
             </div>
@@ -157,7 +170,7 @@
               </span>
             </div>
             <div class="footerr">
-                Your form has been submitted. Our team will get in touch with you shortly. <br/> Happy Learning!
+                Your form has been submitted.<br/> Our team will get in touch with you shortly. <br/> Happy Learning!
             </div>
             <!-- 
                   <div class="field btns">
@@ -168,7 +181,9 @@
         </form>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js">
+     
+    </script>
   </body>
 </html>
 
