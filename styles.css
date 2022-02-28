@@ -27,8 +27,9 @@ input::-webkit-inner-spin-button {
   padding:10px;
   border-radius: 5px;
   border: 1px solid lightgrey;
-  width: 305px;
-  height: 53px;
+  width: 92%;
+  max-height: 100px;
+   height: 193px;
 }
 
 .validtext {
@@ -81,7 +82,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   overflow: hidden;
-  background: url("bg.png"), -webkit-linear-gradient(bottom, #0250c5, #f7834e);
+  background: #f7834e;
 }
 ::selection {
   color: #fff;
